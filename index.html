@@ -18,7 +18,6 @@
       background: #eee;
     }
   </style>
-  <!-- <script src="/game.js"></script> -->
 </head>
 
 <body>
@@ -79,7 +78,9 @@
         }
       }
 
-      if (x + dx - ballRadius < 0 || x + dx + ballRadius > canvas.width) { dx = - dx; }
+      if (x + dx - ballRadius < 0 || x + dx + ballRadius > canvas.width) {
+        dx = - dx;
+      }
 
       if (rightPressed) {
         paddleX = Math.min(paddleX + 7, canvas.width - paddleWidth);
